@@ -4,6 +4,9 @@ overrides:
   viem: workspace:*
 
 patchedDependencies:
+  '@wagmi/chains@0.2.16':
+    hash: nrly73c4zibcnvmjqtlh2jkody
+    path: patches/@wagmi__chains@0.2.16.patch
   vitepress@1.0.0-alpha.61:
     hash: bwgf4tbd2mw4gh6hee525znk3q
     path: patches/vitepress@1.0.0-alpha.61.patch
@@ -29,7 +32,7 @@ importers:
         version: 1.2.0
       '@wagmi/chains':
         specifier: 0.2.16
-        version: 0.2.16(typescript@5.0.4)
+        version: 0.2.16(patch_hash=nrly73c4zibcnvmjqtlh2jkody)(typescript@5.0.4)
       abitype:
         specifier: 0.8.2
         version: 0.8.2(typescript@5.0.4)
@@ -2618,7 +2621,7 @@ packages:
       - vue
     dev: true
 
-  /@wagmi/chains@0.2.16(typescript@5.0.4):
+  /@wagmi/chains@0.2.16(patch_hash=nrly73c4zibcnvmjqtlh2jkody)(typescript@5.0.4):
     resolution: {integrity: sha512-rkWaI2PxCnbD8G07ZZff5QXftnSkYL0h5f4DkHCG3fGYYr/ZDvmCL4bMae7j7A9sAif1csPPBmbCzHp3R5ogCQ==}
     peerDependencies:
       typescript: '>=4.9.4'
@@ -2628,6 +2631,7 @@ packages:
     dependencies:
       typescript: 5.0.4
     dev: false
+    patched: true
 
   /@wagmi/chains@0.2.7(typescript@5.0.4):
     resolution: {integrity: sha512-Oqnkl5n9MTBdMzgIwwdSKEDfm0Vdv2CYBaDyTa5SiTjFNaIfT6MRATLg7KbI3JydfxqJphsVFL+TZZqFvkte/g==}
